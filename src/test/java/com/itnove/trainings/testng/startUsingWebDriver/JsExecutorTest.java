@@ -11,7 +11,7 @@ import static org.testng.Assert.assertTrue;
  */
 public class JsExecutorTest extends BaseTest {
 
-    @Test
+    @Test(enabled = false)
     public void testVideoAvanzado() throws Exception {
         driver.get("http://www.ccma.cat/tv3/directe-avancat/324/");
         acceptarCookies(driver);

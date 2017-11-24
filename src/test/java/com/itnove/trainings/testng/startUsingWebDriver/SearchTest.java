@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
  */
 public class SearchTest extends BaseTest {
 
-    @Test
+    @Test(enabled = false)
     public void testApp() throws InterruptedException {
         String cerca = "apple";
         //1

@@ -16,7 +16,7 @@ import static org.testng.Assert.assertTrue;
  */
 public class HoverMenuTest extends BaseTest {
 
-    @Test
+    @Test(enabled = false)
     public void testApp() throws InterruptedException {
         //1
         driver.get("http://opencart.votarem.lu");

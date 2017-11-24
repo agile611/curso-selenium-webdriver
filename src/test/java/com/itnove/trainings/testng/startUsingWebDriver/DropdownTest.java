@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class DropdownTest extends BaseTest {
 
-    @Test
+    @Test(enabled = false)
     public void testApp() throws InterruptedException {
         driver
                 .navigate().to("https://the-internet.herokuapp.com/dropdown");

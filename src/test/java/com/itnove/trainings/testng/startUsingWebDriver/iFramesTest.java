@@ -21,7 +21,7 @@ public class iFramesTest extends BaseTest {
         }
     }
 
-    @Test
+    @Test(enabled = false)
     public void testApp() throws InterruptedException {
         driver.navigate().to("https://the-internet.herokuapp.com/iframe");
         listIframesFromPage(driver);
