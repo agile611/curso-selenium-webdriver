@@ -1,15 +1,13 @@
-package com.itnove.trainings.junit.startUsingWebDriver;
+package com.itnove.trainings.testng.startUsingWebDriver;
 
-import org.junit.After;
-import org.junit.Before;
+
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,7 +24,7 @@ public class BaseTest {
     public static LocalRemoteWebDriverWait wait;
     public static JavascriptExecutor jse;
 
-    @Before
+    @BeforeMethod
     public void setUp() throws IOException {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-linux");
@@ -45,7 +43,7 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
     }
 
-    @After
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }

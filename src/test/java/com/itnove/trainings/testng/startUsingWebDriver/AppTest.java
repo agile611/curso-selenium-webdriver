@@ -1,13 +1,13 @@
-package com.itnove.trainings.junit.startUsingWebDriver;
+package com.itnove.trainings.testng.startUsingWebDriver;
 
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.ResultsPage;
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.SearchPage;
-import org.junit.Assert;
-import org.junit.Test;
+import com.itnove.trainings.testng.startUsingWebDriver.pages.searchPage.ResultsPage;
+import com.itnove.trainings.testng.startUsingWebDriver.pages.searchPage.SearchPage;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 
 /**
- * Unit test for simple App.
+ * Initial example appTest
  */
 public class AppTest extends BaseTest {
 

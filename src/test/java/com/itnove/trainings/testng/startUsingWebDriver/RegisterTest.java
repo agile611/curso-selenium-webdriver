@@ -1,15 +1,12 @@
-package com.itnove.trainings.junit.startUsingWebDriver;
+package com.itnove.trainings.testng.startUsingWebDriver;
 
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.ResultsPage;
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.SearchPage;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import static junit.framework.TestCase.assertTrue;
+import static org.testng.Assert.assertTrue;
 
 
 /**

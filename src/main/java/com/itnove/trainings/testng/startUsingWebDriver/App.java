@@ -1,4 +1,4 @@
-package com.itnove.trainings.junit.startUsingWebDriver;
+package com.itnove.trainings.testng.startUsingWebDriver;
 
 /**
  * Hello world!

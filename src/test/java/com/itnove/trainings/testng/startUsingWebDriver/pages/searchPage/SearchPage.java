@@ -1,4 +1,4 @@
-package com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage;
+package com.itnove.trainings.testng.startUsingWebDriver.pages.searchPage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

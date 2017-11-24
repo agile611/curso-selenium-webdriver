@@ -1,16 +1,15 @@
-package com.itnove.trainings.junit.startUsingWebDriver;
+package com.itnove.trainings.testng.startUsingWebDriver;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.*;
 
-import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertTrue;
 
 
 /**
  * Created by guillemhernandezsola on 09/05/2017.
  */
 public class JsExecutorTest extends BaseTest {
-
 
     @Test
     public void testVideoAvanzado() throws Exception {

@@ -1,17 +1,14 @@
-package com.itnove.trainings.junit.startUsingWebDriver;
+package com.itnove.trainings.testng.startUsingWebDriver;
 
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.ResultsPage;
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.SearchPage;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static junit.framework.TestCase.assertFalse;
+import static org.testng.Assert.assertFalse;
 
 
 /**
- * Unit test for simple App.
+ * Dynamic Content from The Internet Heroku App
  */
 public class DynamicContentTest extends BaseTest {
 

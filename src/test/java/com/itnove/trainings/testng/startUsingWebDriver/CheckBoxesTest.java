@@ -1,18 +1,15 @@
-package com.itnove.trainings.junit.startUsingWebDriver;
+package com.itnove.trainings.testng.startUsingWebDriver;
 
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.ResultsPage;
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.SearchPage;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertNull;
+import static org.testng.Assert.assertTrue;
+import static org.testng.AssertJUnit.assertNull;
 
 
 /**
- * Unit test for simple App.
+ * Checkboxes from the Internet Heroku App
  */
 public class CheckBoxesTest extends BaseTest {
 
