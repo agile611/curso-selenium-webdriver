@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="StartUsingWebDriver test examples"
+       allow-return-values="true" verbose="1"
+       parallel="tests" thread-count="4">
+    <test name="all" parallel="classes" thread-count="4">
+        <classes>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.AlertsTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.BasicAuth"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.DynamicContentTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.AppTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.ChallengingDomTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.CheckBoxesTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.DisappearingElementsTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.DragAndDropTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.DropdownTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.DynamicContentTest"/>
+            <class name="com.itnove.trainings.testng.startUsingWebDriver.FramesTest"/>
+        </classes>
+    </test>
+</suite>

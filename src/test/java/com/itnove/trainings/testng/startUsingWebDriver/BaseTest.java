@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 
@@ -28,18 +29,20 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() throws IOException {
         String browser = System.getProperty("browser");
+        DesiredCapabilities capabilities;
         if (browser != null && browser.equalsIgnoreCase("chrome")) {
-            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            capabilities = DesiredCapabilities.chrome();
             System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-linux");
             driver = new ChromeDriver(capabilities);
         } else {
-            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+            capabilities = DesiredCapabilities.firefox();
             System.setProperty("webdriver.gecko.driver",
                     "src" + File.separator + "main"
                             + File.separator + "resources"
                             + File.separator + "geckodriver-linux");
             driver = new FirefoxDriver(capabilities);
         }
+        //driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);
         wait = new LocalRemoteWebDriverWait(driver, timeOut);
         hover = new Actions(driver);
         driver.manage().deleteAllCookies();
