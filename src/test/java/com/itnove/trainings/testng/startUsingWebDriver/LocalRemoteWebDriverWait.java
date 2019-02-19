@@ -7,9 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.*;
 
 import java.util.Arrays;
-
-import static java.util.concurrent.TimeUnit.MILLISECONDS;
-import static java.util.concurrent.TimeUnit.SECONDS;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Wraps LocalRemoteWebDriverWait to be used in a more convenient way and adds functionality.
@@ -121,10 +119,6 @@ public class LocalRemoteWebDriverWait extends WebDriverWait {
         until(ExpectedConditions.stalenessOf(element));
     }
 
-    public void forTextPresent(By locator, String text) {
-        until(ExpectedConditions.textToBePresentInElement(locator, text));
-    }
-
     public void forTextPresentInElementValue(By locator, String text) {
         until(ExpectedConditions.textToBePresentInElementValue(locator, text));
     }
@@ -142,7 +136,7 @@ public class LocalRemoteWebDriverWait extends WebDriverWait {
             if (e.getAttribute(textValue) != null) {
                 return Boolean.valueOf(e.getAttribute(textValue));
             }
-            pause(milliseconds);
+            pauseMilliseconds(milliseconds);
         }
         return Boolean.valueOf(null);
     }
@@ -185,9 +179,9 @@ public class LocalRemoteWebDriverWait extends WebDriverWait {
         return pageLoaded;
     }
 
-    public void pause(long milliseconds) {
+    public void pauseMilliseconds(long milliseconds) {
         try {
-            Sleeper.SYSTEM_SLEEPER.sleep(new Duration(milliseconds, MILLISECONDS));
+            TimeUnit.MILLISECONDS.sleep(milliseconds);
         } catch (InterruptedException ie) {
             System.out.println("Waiting finished during " + milliseconds + " milliseconds ");
         }
@@ -195,7 +189,7 @@ public class LocalRemoteWebDriverWait extends WebDriverWait {
 
     public void pauseSeconds(long seconds) {
         try {
-            Sleeper.SYSTEM_SLEEPER.sleep(new Duration(seconds, SECONDS));
+            TimeUnit.SECONDS.sleep(seconds);
         } catch (InterruptedException ie) {
             System.out.println("Waiting finished during " + seconds + " seconds ");
         }

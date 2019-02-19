@@ -32,14 +32,14 @@ public class BaseTest {
         DesiredCapabilities capabilities;
         if (browser != null && browser.equalsIgnoreCase("chrome")) {
             capabilities = DesiredCapabilities.chrome();
-            System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-linux");
+            System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-macos");
             driver = new ChromeDriver(capabilities);
         } else {
             capabilities = DesiredCapabilities.firefox();
             System.setProperty("webdriver.gecko.driver",
                     "src" + File.separator + "main"
                             + File.separator + "resources"
-                            + File.separator + "geckodriver-linux");
+                            + File.separator + "geckodriver-macos");
             driver = new FirefoxDriver(capabilities);
         }
         //driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);

@@ -197,7 +197,7 @@ public class LocalNavigationActions extends Locators {
                                                 LocalRemoteWebDriverWait wait) {
         int i = 0;
         while (!WebElementExists(driver, element) && i < 20) {
-            wait.pause(1000);
+            wait.pauseMilliseconds(1000);
             i++;
         }
         return WebElementExists(driver, element);

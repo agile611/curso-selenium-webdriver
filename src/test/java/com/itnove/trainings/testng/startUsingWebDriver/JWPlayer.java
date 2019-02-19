@@ -32,7 +32,7 @@ public class JWPlayer extends BaseTest {
      * @throws InterruptedException
      */
     protected void waitForPlayer(WebDriver driver) throws InterruptedException {
-        wait.pause(2000);
+        wait.pauseMilliseconds(2000);
         (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
                 return (executor.executeScript("return jwplayer().getState()") != null);
@@ -185,7 +185,7 @@ public class JWPlayer extends BaseTest {
 
     public boolean assertStatePause() throws InterruptedException {
         waitForPlayer(driver);
-        executor.executeScript("jwplayer().pause()");
+        executor.executeScript("jwplayer().pauseMilliseconds()");
         System.out.println(executor.executeScript("return jwplayer().getState()"));
         return executor.executeScript("return jwplayer().getState()").equals("buffering") ||
                 executor.executeScript("return jwplayer().getState()").equals("paused");
