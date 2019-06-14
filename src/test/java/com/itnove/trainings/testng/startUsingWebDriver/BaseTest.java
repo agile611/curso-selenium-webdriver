@@ -27,6 +27,7 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() throws MalformedURLException {
         String browser = System.getProperty("browser");
+        String hub = System.getProperty("hub");
         DesiredCapabilities capabilities;
         if (browser != null && browser.equalsIgnoreCase("chrome")) {
             capabilities = DesiredCapabilities.chrome();
@@ -41,7 +42,7 @@ public class BaseTest {
             //driver = new FirefoxDriver(capabilities);
         }
         //driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);
-        driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);
+        driver = new RemoteWebDriver(new URL(hub), capabilities);
         wait = new LocalRemoteWebDriverWait(driver, timeOut);
         hover = new Actions(driver);
         driver.manage().deleteAllCookies();
