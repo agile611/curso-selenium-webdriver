@@ -41,8 +41,8 @@ public class BaseTest {
                             + File.separator + "geckodriver-macos");
             //driver = new FirefoxDriver(capabilities);
         }
-        //driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);
-        driver = new RemoteWebDriver(new URL(hub), capabilities);
+        driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);
+        //driver = new RemoteWebDriver(new URL(hub), capabilities);
         wait = new LocalRemoteWebDriverWait(driver, timeOut);
         hover = new Actions(driver);
         driver.manage().deleteAllCookies();
