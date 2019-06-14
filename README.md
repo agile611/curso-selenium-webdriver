@@ -30,6 +30,14 @@ brew install maven
 
 4. Quit the driver
 
+## Start Selenium Stand Alone
+
+Just type the command:
+
+```
+java -Dwebdriver.chrome.driver=chromedriver -Dwebdriver.gecko.driver=geckodriver -jar selenium-server-standalone-3.141.59.jar
+```
+
 ## Support
 
 This tutorial is released into the public domain by ITNove under WTFPL.
