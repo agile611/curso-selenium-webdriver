@@ -4,7 +4,7 @@
        parallel="tests">
     <test name="all" parallel="classes" thread-count="4" time-out="240000">
         <packages>
-            <package name="com.itnove.trainings.testng.startUsingWebDriver.*"/>
+            <package name="com.agile611.testng.webdriver.*"/>
         </packages>
     </test>
 </suite>

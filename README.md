@@ -40,7 +40,7 @@ java -Dwebdriver.chrome.driver=chromedriver -Dwebdriver.gecko.driver=geckodriver
 
 ## Support
 
-This tutorial is released into the public domain by ITNove under WTFPL.
+This tutorial is released into the public domain by Agile611 under WTFPL.
 
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
