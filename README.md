@@ -5,9 +5,9 @@ Código del curso de Selenium WebDriver de [Agile611](https://www.agile611.com)
 ## Pre-requisite:
 1. MacOS, Linux o Windows
 2. [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
-3. [Maven] (https://maven.apache.org/download.cgi)
-4. [Firefox] (https://www.mozilla.org/en-US/firefox/new/) instalado
-5. [Chrome] (https://www.google.com/chrome/) instalado
+3. [Maven](https://maven.apache.org/download.cgi)
+4. [Firefox](https://www.mozilla.org/en-US/firefox/new/) instalado
+5. [Chrome](https://www.google.com/chrome/) instalado
 6. [Intellij Idea](https://www.jetbrains.com/idea/) o el IDE de Java que más os guste
 
 
