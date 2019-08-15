@@ -1,54 +1,24 @@
-# Start Using WebDriver Examples
+# Curso de Selenium WebDriver
 
-This is the mini-sized package to start use WebDriver with Firefox and Chrome
+Código del curso de Selenium WebDriver de [Agile611](https://www.agile611.com)
 
 ## Pre-requisite:
-1. MacOS or Linux (Very important, not supporting any other OS, like Windows).
-2. Java
-3. Maven
-4. Firefox Installed
-5. Chrome Installed
+1. MacOS, Linux o Windows
+2. [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+3. [Maven] (https://maven.apache.org/download.cgi)
+4. [Firefox] (https://www.mozilla.org/en-US/firefox/new/) instalado
+5. [Chrome] (https://www.google.com/chrome/) instalado
+6. [Intellij Idea](https://www.jetbrains.com/idea/) o el IDE de Java que más os guste
 
-## General Environment installation
-1. Install Homebrew from http://www.brew.sh
-2. Install Java
-```
-brew cask install java
-```
-3. Install Maven
-```
-brew install maven
-```
 
-## Expected Automate Test Result:
+Puedes encontrar el [curso completo aquí](https://www.agile611.com/cursos/agile/curso-online-selenium-webdriver-version-java/)
 
-1. Open browser, e.g., Firefox
+## Soporte
 
-2. Visit "https://www.duckduckgo.com"
-
-3. Verify if the title is "Hawaiian pizza"
-
-4. Quit the driver
-
-## Start Selenium Stand Alone
-
-Just type the command:
-
-```
-java -Dwebdriver.chrome.driver=chromedriver -Dwebdriver.gecko.driver=geckodriver -jar selenium-server-standalone-3.141.59.jar
-```
-
-## Support
-
-This tutorial is released into the public domain by Agile611 under WTFPL.
+Este tutorial es de dominio público y lo ha realizado [Agile611](https://www.agile611.com) under WTFPL.
 
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
-This README file was originally written by [Guillem Hernández Sola](https://www.linkedin.com/in/guillemhernandezsola/) and is likewise released into the public domain.
+Este README lo ha hecho [Guillem Hernández Sola](https://www.linkedin.com/in/guillemhs/) y también es de dominio público.
 
-Please contact ITNove for further details.
-
-* ITNOVE a Cynertia Consulting
-* Passeig de Gràcia 110, 4rt 2a
-* 08008 Barcelona
-* T: 93 184 53 44
+Podéis contactar a [Agile611](https://www.agile611.com) por [aquí](https://www.agile611.com/formulario-de-contacto/) para más detalles.
