@@ -2,7 +2,7 @@
 
 Código del curso de Selenium WebDriver de [Agile611](https://www.agile611.com)
 
-## Pre-requisite:
+## Pre-requisitos:
 1. MacOS, Linux o Windows
 2. [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 3. [Maven](https://maven.apache.org/download.cgi)
